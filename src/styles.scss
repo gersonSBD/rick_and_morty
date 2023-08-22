@@ -1,0 +1,31 @@
+@import "../src/assets/variables/fonts.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../src/assets/img/bg-rick-morty.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+    font-family: $title;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sub-title {
+    font-family: $title;
+    font-size: 14px;
+}
+
+.text {
+    font-family: $text;
+    font-size: 14px;
+    font-weight: 300;
+}

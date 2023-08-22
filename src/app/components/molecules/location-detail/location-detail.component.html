@@ -1,0 +1,15 @@
+<div class="location">
+    <!-- start: description -->
+    <div class="location_description">
+        <p class="title">
+            {{ location?.name | titlecase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Type:&nbsp;&nbsp;</span>{{ location?.type | firstUppercase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Dimension:&nbsp;&nbsp;</span>{{ location?.dimension | firstUppercase }}
+        </p>
+    </div>
+    <!-- end: description -->
+</div>

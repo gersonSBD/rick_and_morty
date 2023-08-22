@@ -1,0 +1,26 @@
+<div class="page-one">
+    <!-- start: logo -->
+    <div class="page-one__logo">
+        <img class="page-one__logo-img" src="assets/img/logo.png"
+            alt="Logo Rick and Morty">
+    </div>
+    <!-- end: logo -->
+    <!-- start: content -->
+    <div class="page-one__content">
+        <!-- start: characters -->
+        <app-characters
+            [characters]="charactersPerPage">
+        </app-characters>
+        <!-- end: characters -->
+        <!-- start: pagination -->
+        <app-pagination-full
+            *ngIf="totalCharacters"
+            [total]="totalCharacters"
+            [currentPage]="page"
+            [sizePage]="this.size"
+            (change)="handlerChangePage($event)">
+        </app-pagination-full>
+        <!-- end: pagination -->
+    </div>
+    <!-- end: content -->
+</div>

@@ -1,0 +1,29 @@
+<div class="filters text">
+   <!-- start: filters -->
+   <div class="filters__wrapper">
+      <!-- start: filter by name -->
+      <app-input
+         class="filters__input"
+         label="Filtrar por nombre"
+         placeholder="Buscar por nombre"
+         [formControl]="nameControl">
+      </app-input>
+      <!-- end: filter by name -->
+      <!-- start: filter by status -->
+      <app-select
+         *ngIf="showStatusOptions"
+         class="filters__select"
+         label="Filtrar por estado"
+         [formControl]="statusControl"
+         [options]="statusOptions"
+         (valueChange)="handlerStatusChange($event)">
+      </app-select>
+      <!-- start: filter by status -->
+   </div>
+   <!-- end: filters -->
+   <!-- start: loading -->
+   <div *ngIf="isLoading" class="filters__loading">
+      <app-loading></app-loading>
+   </div>
+   <!-- end: loading -->
+</div>

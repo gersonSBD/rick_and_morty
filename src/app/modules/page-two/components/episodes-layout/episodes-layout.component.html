@@ -1,0 +1,19 @@
+<!-- start: filters -->
+<app-filters
+(filtersEvent)="handlerFiltersEpisodes($event)"
+[showStatusOptions]="showStatusFilter">
+</app-filters>
+<!-- start: filters -->
+<!-- start: episodes -->
+<app-episodes
+[episodes]="episodes">
+</app-episodes>
+<!-- end: episodes -->
+<!-- start: pagination -->
+<app-pagination-simple
+*ngIf="pagination"
+[pagination]="pagination"
+[currentPage]="page"
+(changePageEvent)="handlerChangePage($event)">
+</app-pagination-simple>
+<!-- end: pagination -->

@@ -1,0 +1,17 @@
+<div class="location">
+    <!-- sart: id -->
+    <div class="location__id">
+        <p class="location__id-text text"><span class="title">#:</span> {{ location?.id }}</p>
+    </div>
+    <!-- end: id -->
+    <!-- start: description -->
+    <div class="location_description">
+        <p class="title">
+            {{ location?.name | titlecase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Type:&nbsp;&nbsp;</span>{{ location?.type | firstUppercase }}
+        </p>
+    </div>
+    <!-- end: description -->
+</div>

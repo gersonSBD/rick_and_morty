@@ -1,0 +1,37 @@
+@import "../../../../assets/variables/mixins.scss";
+
+.character {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 10%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.character__id {
+    position: absolute;
+    padding: 0 10px 0 10px;
+    background-color: #fff;
+    border-radius: 20%;
+    top: 10px;
+    right: 15px;
+}
+
+.character__id-text {
+    padding: 0;
+    margin: 0;
+    color: #484848;
+    span {
+        font-weight: bold;
+    }
+}
+
+.character_photo {
+    border-radius: 10%;
+    width: 100%;
+}
+
+.character_description {
+    padding: 20px 20px 0 20px;
+}

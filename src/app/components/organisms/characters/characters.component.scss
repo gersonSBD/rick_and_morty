@@ -1,0 +1,40 @@
+@import "../../../../assets/variables/mixins.scss";
+
+.characters {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto 20px;
+    min-height: 500px;
+}
+
+.characters__list {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    @include tablet {
+        grid-template-columns: auto auto auto;
+    }
+    @include desktop {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+.characters__item {
+    margin: 10px;
+}
+
+.characters__no-exist-items {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 20%;
+    }
+}

@@ -1,0 +1,22 @@
+<div class="locations">
+    <!-- start: show when exist items -->
+    <ng-container *ngIf="locations?.length">
+        <!-- start: list locations -->
+        <div class="locations__list">
+            <app-location
+                (click)="goToDetail(location)"
+                class="locations__item"
+                *ngFor="let location of locations"
+                [location]="location">
+            </app-location>
+        </div>
+        <!-- end: list locations -->
+    </ng-container>
+    <!-- start: show when no exist items -->
+    <ng-container *ngIf="!locations?.length">
+        <div class="locations__no-exist-items">
+            <img src="assets/img/empty.png" alt="">
+        </div>
+    </ng-container>
+    <!-- end: show when no exist items -->
+</div>

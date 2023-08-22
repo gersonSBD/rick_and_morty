@@ -1,0 +1,23 @@
+<div class="character">
+    <!-- sart: id -->
+    <div class="character__id">
+        <p class="character__id-text text"><span class="title">#:</span> {{ character?.id }}</p>
+    </div>
+    <!-- end: id -->
+    <!-- start: photo -->
+    <img
+        class="character_photo"
+        [appImgSrc]="character?.image"
+        alt="Photo character">
+    <!-- end: photo -->
+    <!-- start: description -->
+    <div class="character_description">
+        <p class="title">
+            {{ character?.name | titlecase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Status:&nbsp;&nbsp;</span>{{ character?.status | firstUppercase }}
+        </p>
+    </div>
+    <!-- end: description -->
+</div>

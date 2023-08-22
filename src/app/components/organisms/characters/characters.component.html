@@ -1,0 +1,22 @@
+<div class="characters">
+    <!-- start: show when exist items -->
+    <ng-container *ngIf="characters?.length">
+        <!-- start: list characters -->
+        <div class="characters__list">
+            <app-character
+                (click)="goToDetail(character)"
+                class="characters__item"
+                *ngFor="let character of characters"
+                [character]="character">
+            </app-character>
+        </div>
+        <!-- end: list characters -->
+    </ng-container>
+    <!-- start: show when no exist items -->
+    <ng-container *ngIf="!characters?.length">
+        <div class="characters__no-exist-items">
+            <img src="assets/img/empty.png" alt="">
+        </div>
+    </ng-container>
+    <!-- end: show when no exist items -->
+</div>

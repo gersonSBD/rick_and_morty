@@ -1,0 +1,14 @@
+.loading {
+    @apply w-full mb-4;
+}
+
+.loading__wrapper {
+    @apply flex animate-pulse;
+}
+
+.loading__wrapper-bar {
+    @apply flex-1;
+    div {
+        @apply h-1 bg-green-600;
+    }
+}

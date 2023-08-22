@@ -1,0 +1,27 @@
+<div class="character flex flex-row">
+    <!-- start: photo -->
+    <img
+        class="character_photo basis-1/4"
+        [appImgSrc]="character?.image"
+        alt="Photo character">
+    <!-- end: photo -->
+    <!-- start: description -->
+    <div class="character_description basis-3/4">
+        <p class="title">
+            {{ character?.name | titlecase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Status:&nbsp;&nbsp;</span>{{ character?.status | firstUppercase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Gender:&nbsp;&nbsp;</span>{{ character?.gender | firstUppercase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Specie:&nbsp;&nbsp;</span>{{ character?.species | firstUppercase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Origin:&nbsp;&nbsp;</span>{{ character?.origin?.name | firstUppercase }}
+        </p>
+    </div>
+    <!-- end: description -->
+</div>

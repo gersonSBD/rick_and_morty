@@ -1,0 +1,21 @@
+<div class="pagination-simple text">
+    <!-- start: prev button -->
+    <app-button
+        text="Anterior"
+        [disabled]="disabledPrevButton"
+        (clickEvent)="handlerPrevPage()">
+    </app-button>
+    <!-- end: prev button -->
+    <!-- start: current page -->
+    <p class="pagination-simple__text">
+        {{ currentPage }} de {{ pagination?.pages }}
+    </p>
+    <!-- end: current page -->
+    <!-- start: next button -->
+    <app-button
+        text="Siguiente"
+        [disabled]="!pagination?.next"
+        (clickEvent)="handlerNextPage()">
+    </app-button>
+    <!-- end: next button -->
+</div>

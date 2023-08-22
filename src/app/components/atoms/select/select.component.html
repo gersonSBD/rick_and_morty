@@ -1,0 +1,11 @@
+<label *ngIf="label" for="select" class="select__label">{{ label }}</label>
+<select
+    id="select"
+    class="select"
+    [formControl]="formControl"
+    (change)="handlerValueChange($event)">
+    <option
+        *ngFor="let option of options" [value]="option.id">
+        {{option.name}}
+    </option>
+</select>

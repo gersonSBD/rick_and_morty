@@ -1,0 +1,17 @@
+<div class="episode">
+    <!-- sart: id -->
+    <div class="episode__id">
+        <p class="episode__id-text text"><span class="title">#:</span> {{ episode?.id }}</p>
+    </div>
+    <!-- end: id -->
+    <!-- start: description -->
+    <div class="episode_description">
+        <p class="title">
+            {{ episode?.name | titlecase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Episode:&nbsp;&nbsp;</span>{{ episode?.episode | firstUppercase }}
+        </p>
+    </div>
+    <!-- end: description -->
+</div>

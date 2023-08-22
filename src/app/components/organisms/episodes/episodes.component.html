@@ -1,0 +1,22 @@
+<div class="episodes">
+    <!-- start: show when exist items -->
+    <ng-container *ngIf="episodes?.length">
+        <!-- start: list episodes -->
+        <div class="episodes__list">
+            <app-episode
+                (click)="goToDetail(episode)"
+                class="episodes__item"
+                *ngFor="let episode of episodes"
+                [episode]="episode">
+            </app-episode>
+        </div>
+        <!-- end: list episodes -->
+    </ng-container>
+    <!-- start: show when no exist items -->
+    <ng-container *ngIf="!episodes?.length">
+        <div class="episodes__no-exist-items">
+            <img src="assets/img/empty.png" alt="">
+        </div>
+    </ng-container>
+    <!-- end: show when no exist items -->
+</div>

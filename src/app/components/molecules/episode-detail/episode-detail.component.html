@@ -1,0 +1,15 @@
+<div class="episode">
+    <!-- start: description -->
+    <div class="episode_description">
+        <p class="title">
+            {{ episode?.name | titlecase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Episode:&nbsp;&nbsp;</span>{{ episode?.episode | firstUppercase }}
+        </p>
+        <p class="text">
+            <span class="sub-title">Air date:&nbsp;&nbsp;</span>{{ episode?.air_date | firstUppercase }}
+        </p>
+    </div>
+    <!-- end: description -->
+</div>

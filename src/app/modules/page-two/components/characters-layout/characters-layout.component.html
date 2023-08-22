@@ -1,0 +1,18 @@
+<!-- start: filters -->
+<app-filters
+(filtersEvent)="handlerFiltersCharacters($event)">
+</app-filters>
+<!-- start: filters -->
+<!-- start: characters -->
+<app-characters
+[characters]="characters">
+</app-characters>
+<!-- end: characters -->
+<!-- start: pagination -->
+<app-pagination-simple
+*ngIf="pagination"
+[pagination]="pagination"
+[currentPage]="page"
+(changePageEvent)="handlerChangePage($event)">
+</app-pagination-simple>
+<!-- end: pagination -->

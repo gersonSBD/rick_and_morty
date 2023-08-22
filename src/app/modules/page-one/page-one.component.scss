@@ -1,0 +1,35 @@
+@import "../../../assets/variables/mixins.scss";
+
+.page-one {
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-one__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.page-one__logo-img {
+    width: 60%;
+    margin: 20px;
+    @include tablet {
+        width: 50%;
+    }
+    @include desktop {
+        width: 30%;
+    }
+}
+
+.page-one__content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+

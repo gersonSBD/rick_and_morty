@@ -1,0 +1,28 @@
+
+.button {
+    margin: 3px 20px;
+    background: #fff;
+    border: 3px solid #e07d04;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+    color: #e07d04;
+    min-width: 50px;
+}
+
+.button[disabled] {
+    background: #fff;
+    border: 3px solid #d1d1d1;
+    color: #d1d1d1;
+}
+
+.button:hover {
+    background: #e07d04;
+    color: #fff;
+}
+
+.button[disabled]:hover {
+    background: #fff;
+    border: 3px solid #d1d1d1;
+    color: #d1d1d1;
+}

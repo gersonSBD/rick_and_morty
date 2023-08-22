@@ -1,0 +1,35 @@
+<div class="pagination-full text">
+    <!-- start: first button -->
+    <app-button
+        text="<<"
+        [disabled]="isFirst"
+        (clickEvent)="handlerFirstPage()">
+    </app-button>
+    <!-- end: first button -->
+    <!-- start: prev button -->
+    <app-button
+        text="<"
+        [disabled]="isFirst"
+        (clickEvent)="handlerPrevPage()">
+    </app-button>
+    <!-- end: prev button -->
+    <!-- start: current page -->
+    <p class="pagination-full__text">
+        {{ currentPage }} de {{ totalPages }}
+    </p>
+    <!-- end: current page -->
+    <!-- start: next button -->
+    <app-button
+        text=">"
+        [disabled]="isLast"
+        (clickEvent)="handlerNextPage()">
+    </app-button>
+    <!-- end: next button -->
+    <!-- start: next button -->
+    <app-button
+        text=">>"
+        [disabled]="isLast"
+        (clickEvent)="handlerLastPage()">
+    </app-button>
+    <!-- end: next button -->
+</div>
